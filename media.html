@@ -1,12 +1,24 @@
-<!DOCTYPE html>
-<html>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
 
- <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
- 
- <script type="text/javascript" charset="utf-8">
-         // Wait for Cordova to load
+<body>
+</body>
+</html>
+
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+                          "http://www.w3.org/TR/html4/strict.dtd">
+    <html>
+      <head>
+        <title>Media Example</title>
+
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8">
+
+        // Wait for Cordova to load
         //
         document.addEventListener("deviceready", onDeviceReady, false);
 
@@ -89,27 +101,12 @@
             document.getElementById('audio_position').innerHTML = position;
         }
 
-</script>
-
-</head>
-
-<body>
-
-<!--<h2>Spectacular Mountains</h2>
-<img src="images/02.gif" alt="Mountain View" style="width:100%;height:100%"> -->
-
-<img name="01.jpg" alt="" src="images/01.jpg"                
-             onmouseout="this.src='images/01.jpg'"
-             onmouseover="this.src='images/02.gif'"
-             onclick="setBanner(); showFlag(); "/>
-
-
-<embed src="media/001.mp3"autostart="true" hidden="true" loop="1" volume="100" width="0" height=0>
-
-
-
-
-
-
-</body>
-</html>
+        </script>
+      </head>
+      <body>
+        <a href="#" class="btn large" onclick="playAudio('http://audio.ibeat.org/content/p1rj1s/p1rj1s_-_rockGuitar.mp3');">Play Audio</a>
+        <a href="#" class="btn large" onclick="pauseAudio();">Pause Playing Audio</a>
+        <a href="#" class="btn large" onclick="stopAudio();">Stop Playing Audio</a>
+        <p id="audio_position"></p>
+      </body>
+    </html>
